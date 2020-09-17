@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Liste d'items</title>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th>Nom</th><th>Evaluation</th>
+			</tr>
+		</thead>
+		{{#items}}
+		<tr>
+			<th>{{nom}}</th><th>{{evaluation}}</th><th><a href="items/del/{{nom}}">supprimer</a></th><th><a href="items/inc/{{nom}}">incrémenter</a></th>
+		</tr>
+		{{/items}}
+	</table>
+	<button><a href="items/new">Ajouter un item</a></button>
+</body>
+</html>
