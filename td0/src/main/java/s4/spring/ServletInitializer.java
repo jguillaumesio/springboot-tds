@@ -1,4 +1,4 @@
-package s4.spring.td0;
+package s4.spring;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

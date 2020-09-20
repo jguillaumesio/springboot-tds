@@ -1,0 +1,15 @@
+{{ > header }}
+	<div class="ui top attached tabular menu" id="menu">
+	  	{{#categorie}}<a class="item" href="/{{libelle}}/items">{{libelle}}</a>{{/categorie}}
+	</div>
+	{{#categorie}}
+	<div class="ui bottom attached tab segment" data-tab={{libelle}}>
+	  {{#items}}
+	  	{{nom}}
+	  {{/items}}
+	</div>
+	{{/categorie}}
+		<script>
+		$('.menu .item').tab();
+		</script>
+{{ > footer }}

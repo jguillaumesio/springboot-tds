@@ -1,4 +1,4 @@
-package s4.spring.td0;
+package s4.spring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

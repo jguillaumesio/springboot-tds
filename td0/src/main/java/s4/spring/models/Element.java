@@ -1,6 +1,6 @@
-package s4.spring.td0.models;
+package s4.spring.models;
 
-public class Element {
+public class Element extends Object{
 	
 	private int evaluation;
 	private String nom;
@@ -26,6 +26,21 @@ public class Element {
 	}
 	public void setNom(String nom) {
 		this.nom = nom;
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (obj == null || obj.getClass()!=getClass()) {
+	        return false;
+		}
+		if(obj instanceof Element)
+		{
+		Element objRet = (Element) obj;
+			if(this.getNom().equals(objRet.getNom())) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 }

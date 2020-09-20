@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Ajout d'item</title>
-</head>
-<body>
+{{ > header }}
 	<form method="post" action="addNew">
-		<input type="text" name="nom"><br>
-		<input type="submit" value="Ajouter l'item">
+		<div class="ui input"><input type="text" name="nom" placeholder="Nom de l'item ..."></div><br>
+		<input type="submit" class="positive ui button" value="Ajouter l'item">
 	</form>
-</body>
-</html>
+{{ > footer }}
+
